@@ -506,7 +506,7 @@ function ui_lib:NewGui()
 
 			settings_keybind_mainevent = game:GetService("UserInputService").InputEnded:Connect(function(input)
 				if input.UserInputType == Enum.UserInputType.Keyboard then
-					if input.KeyCode == Enum.KeyCode.Escape then
+					if input.KeyCode == Enum.KeyCode.D then
 						kb.Text = old_key;
 						settings_key_value = old_key_val;
 						settings_keybind_mainevent:Disconnect();
@@ -2023,7 +2023,7 @@ function ui_lib:NewGui()
 					keybind_mainevent = game:GetService("UserInputService").InputEnded:Connect(function(input, processed)
 						if not processed then
 							if input.UserInputType == Enum.UserInputType.Keyboard then
-								if input.KeyCode == Enum.KeyCode.Escape then
+								if input.KeyCode == Enum.KeyCode.D then
 									keybind_btn.Text = old_key;
 									key_value = old_key_val;
 									keybind_mainevent:Disconnect();
